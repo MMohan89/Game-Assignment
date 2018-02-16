@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tekken 5</title>
+	<link href="public/assets/css/reset.css" rel="stylesheet">
+	<link rel="stylesheet" href="public/assets/css/bootswatch.css">
+	<link href="public/assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	
+	<div class = "header-buttons">
+		<button class="btn btn-default startButton">Start New Game</button>
+		<button class="btn btn-default restartButton">Restart</button>
+		<button class="btn btn-default playButton">Play Battle Music</button>
+		<button class="btn btn-default pauseButton">Pause Music</button>
+	</div>
+	
+	<div class = "container">
+		<div class="alert alert-dismissible alert-danger">
+	  	<button type="button" class="close" data-dismiss="alert">&times;</button>
+	  	<strong>Instructions to play:</strong> 
+	  	<p>1. Select your character to bring to battle.</p>
+		<p>2. Pick your first opponent.</p>
+		<p>3. Click on 'Back Kick', 'Hammer Fist', or 'Block' to attack your opponent.</p>
+		<p>	  * This decreases your opponents HP and will also decrease yours depending on their attack. </p>
+		<p>	  * When your opponent blocks, it will lower your HP depending on your attack.</p>
+		<p>	  * When both characters block, nothing will happen.</p>
+		<p>4. When you've defeated your opponent, you will select another opponent to battle.</p>
+		<p>The goal of the game is to defeat all your opponents! Click <strong>'Start New Game'</strong> to begin.</p>
+		<p>GOOD LUCK!!!</p>
+		</div>
+
+		<h3>Choose Your Character</h3>
+			<div class = 'startBtn'></div>
+			
+		<h3>Your Character</h3>
+			<div class = "userChar"></div>
+	
+		<h3>Characters to Battle</h3>
+			<div class = "opponentChar"></div>
+		
+		<h2>Battle Ground</h2>
+			<div class ='messages'></div>
+			<button class="btn btn-success hit">Back Kick</button>
+			<button class="btn btn-warning spAttack">Hammer Fist</button>
+			<button class="btn btn-danger block">Block</button>
+
+		<h3>Opponent</h3>
+			<div class = "chosenOpponent"></span></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script type = "text/javascript" src="public/assets/javascript/game.js"></script>
+</body>
+</html>
